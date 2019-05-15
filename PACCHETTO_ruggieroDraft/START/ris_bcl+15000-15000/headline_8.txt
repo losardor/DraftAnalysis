@@ -1,0 +1,12 @@
+headline_7.txt                 0.084791 
+headline_9.txt                 0.323048 
+headline_10.txt                0.361354 
+headline_6.txt                 0.570214 
+headline_11.txt                0.755183 
+headline_12.txt                0.978944 
+headline_5.txt                 0.982345 
+headline_4.txt                 1.880547 
+headline_3.txt                 2.635569 
+headline_8.txt                 2.734127 
+headline_2.txt                 2.830580 
+headline_1.txt                 3.015063 

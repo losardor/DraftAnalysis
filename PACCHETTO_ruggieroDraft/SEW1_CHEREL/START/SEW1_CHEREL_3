@@ -1,0 +1,31 @@
+﻿Computers are deterministic machines and we design them to be predictable. They run large sets of precise instructions, given to them as computer programs, never making any mistake. Programmers write programs expecting them to realise precise behaviours.
+
+
+The world out there seems less deterministic and less predictable. Fluid dynamics in the atmosphere drives the weather, political and social conditions spark revolutions, evolution and natural selection yields a variety of life forms. A lot of what happens in the world surprises us.
+
+
+Computers are useful stepping stones in our quest for understanding the complex causality at play in the world. They are great laboratory devices to study complex causality, because in them we can meet together deterministic predictability and surprise.
+
+
+Surprise can happen even from purely deterministic causes and consequences. The mathematician John Conway came up with the cellular automata famously referred to as the game of life, freely inspired from the life of biological cells. It’s a computer program consisting of a grid of cells which can be alive, drawn as a black square, or dead, drawn white. Step by step, the cells states are updated according to their neighbours’ states. A dead cell surrounded by 3 live neighbours becomes live, as if the others had given birth to it. A live cell that is surrounded by less than 2 or more than 3 live neighbours dies, as if by underpopulation or overpopulation. With these rules, the grid animates into a swarm of black cells on a white background, forming lasting structures that seem to be moving around, running into each other, disintegrating or creating one another. The complete set of causes and effects ruling this world are given to the observer, yet he or she is struct with astonishment.
+
+
+The surprising aspect of causality that we can witness in computers go beyond mere abstract games. It can also represent parts of the causality at play out there, such as in biological cells, ecosystems or societies. An example comes up when studying the segregation of people. 
+
+
+There are many reasons why people can segregate by wealth, religion, or skin color. The economist Thomas Shelling unveiled one of them using simulation. Human behaviour is too complex to put in a computer, so he tried to think about what would happen if people made only simple decisions about where to live. Let’s imagine a grid where people can settle, and that there are only two kinds of people, red and green. In this simple, imaginary world, people want to have at least 3 neighbours like them with whom they feel like they can connect more easily. They are comfortable with only 3, but if they have less they will move to another place, and will keep doing so until they are happy. The researcher wrote a program with these rules and observed that very quickly, as people move around, the grid settles into segregated areas of red people with no green, and areas of green people without red. On average, people end up having not just 3 neighbours like them, but twice as many.
+
+
+Thomas Schelling used simulation to make the point that the collective production of segregation may have little to do with the hearts and minds of individuals. The collective consequence of individual actions can surprise us.
+
+
+That a simulation looks like something we observe in the world does not entail that the same mechanisms are at play in the computer program and the word. Different programs, with different generating mechanism, may similarly reproduce a natural phenomena. This is the principle of equifinality. Still, surprise on a computer can illustrate the kind of surprise we may expect out there.
+
+
+Computers serve as laboratory devices that we can use to test hypotheses about how causality works. We can make hypotheses about how causality works in a system to produce a phenomena that we are studying. If we can state these hypotheses unambiguously such that they can be encoded as computer programs, we can run them on computers and observe their consequences.
+
+
+Our understanding about how the world works is what matters, not the computer programs we use to run simulation. We shape it with the hypotheses we make and how we test them. Testing  hypotheses about causality on a computer is not enough. We need to test them in the real world too.
+
+
+Computer simulation is not a revolutionary method that can or should replace the traditional means of scientific enquiry. They are a useful addition to the toolbox of scientists concerned with phenomena involving complex networks of causes and conditions.

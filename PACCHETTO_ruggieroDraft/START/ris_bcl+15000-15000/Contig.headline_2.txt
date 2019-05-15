@@ -1,0 +1,12 @@
+headline_3.txt                 1.751467
+headline_4.txt                 2.225533
+headline_2.txt                 2.451933
+headline_1.txt                 2.548733
+headline_6.txt                 3.051933
+headline_5.txt                 3.127533
+headline_7.txt                 3.207600
+headline_9.txt                 3.207733
+headline_8.txt                 3.208133
+headline_10.txt                3.210400
+headline_11.txt                3.231667
+headline_12.txt                3.263133

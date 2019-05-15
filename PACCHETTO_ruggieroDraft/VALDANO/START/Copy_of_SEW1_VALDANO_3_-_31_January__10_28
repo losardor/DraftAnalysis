@@ -1,0 +1,16 @@
+﻿Genealogies of the Roman Catholic Church
+
+
+Complex networks have fostered scientific progress in many fields, like neuroscience, economics, epidemiology, ecology, sociology. Their scope of application now stretches to the humanities, where they uncover emergent properties that would escape traditional qualitative approaches. A lack of large, comprehensive datasets, however, still hurdles widespread application of quantitative methods, and specifically network theory, to disciplines beyond linguistics. A promising field which could benefit from network theory is history, through the analysis of large-scale historical records.
+
+
+In this work we study of the history of the Roman Catholic Church (RCC), through the quantitative analysis of the genealogical records of its ministers. The RCC is the religious organization presiding over the catholic faith, a branch of christianity. It features a hierarchical clergy headed by the pope, who resides in the Vatican, Rome. Immense political power has rested in the RCC throughout its history. It has shaped the history of Europe for two millennia. Nowadays, it counts 1.28 bn faithful spread around the World, and is a major political actor at the global scale. Its bishops, the highest-ranking clergymen, hold both the religious and administrative power. Bishops generate other bishops through the act of consecration, giving rise to a genealogical structure. For each bishop, living and past, you can identify its consecrators, who are bishops themselves.
+
+
+We use a dataset containing biographical data, and consecration records of over 30,000 bishops, from the 15th century to present day. This is possible because the structure of the RCC has changed very little for centuries, leading to reliable historical recording. We then build a consecration network, whose directed links are consecrator-consecrated relations between bishops (nodes of the networks). Unlike a family tree, links do not represent biological kinship. They are instead a proxy for doctrinal and political relationships, allowing a quantitative investigation of the history of the RCC.
+
+
+We study the genealogy using a phylogenetic approach. To that end, we posit the existence of a genome that each bishop inherits from its consecrators, and passes on to the ones he consecrates. We start by identifying the bishops whose consecrators are either unknown or outside the RCC, and we assign each one of them a unique gene. Each bishop then inherits recursively all the genes of his consecrators. The frequency of occurrence of each gene within its genome then completely characterizes a bishop.
+
+
+We identify the ancient bishops who had the largest impact on bishop population, by measuring the occurrence of the different genes at the population level, in time.

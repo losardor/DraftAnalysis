@@ -1,0 +1,12 @@
+1.910300 --- headline_5.txt 
+1.937934 --- headline_6.txt 
+2.122889 --- headline_3.txt 
+2.131223 --- headline_9.txt 
+2.135317 --- headline_10.txt 
+2.144309 --- headline_7.txt 
+2.147014 --- headline_8.txt 
+2.231230 --- headline_2.txt 
+2.309818 --- headline_11.txt 
+2.393230 --- headline_12.txt 
+2.579940 --- headline_4.txt 
+3.157906 --- headline_1.txt 
