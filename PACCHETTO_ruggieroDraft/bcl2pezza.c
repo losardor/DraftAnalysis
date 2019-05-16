@@ -563,7 +563,7 @@ int carica_file_p(char *nome_dir_p) {
 	c = Ng;
 	for( j = 0; j< c ; j++ ) {
     //printf("bho")
-	  fprintf(fp_out,"%-30s %f\n",
+	  fprintf(fp_out,"%s\t%f\n",
 		  G[permu[j]].nome,
 		  (float) lun_zip[permu[j]]/( (float) l));
 	};
