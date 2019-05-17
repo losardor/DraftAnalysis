@@ -687,7 +687,7 @@ int main( int   argc,
 {
   char *direct;
   int i;
-  int *numero;
+  //int *numero;
   char *pic;
   char *gra;
 
@@ -696,18 +696,12 @@ int main( int   argc,
   pic = (char *) calloc(LUNGPATHNOME,sizeof(char));
   gra = (char *) calloc(LUNGPATHNOME,sizeof(char));
   RIS = (char *) calloc(LUNGPATHNOME,sizeof(char));
-  numero = (int *) malloc(sizeof(int));
-
-  printf("\nInserisci dimensione dei GRANDI\n" );
-
-  while( scanf("%d",numero)  < 0 );
-  GRANDE = *numero;
+  //numero = (int *) malloc(sizeof(int));
 
 
-  printf("\nInserisci dimensione dei PICCOLI\n" );
+  GRANDE = 10000;
 
-  while( scanf("%d",numero)  < 0 );
-  PICCOLO = *numero;
+  PICCOLO = 1000;
 
 
   if( PICCOLO > MAX_WIN ) {
