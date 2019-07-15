@@ -1,0 +1,30 @@
+﻿Contribution for the Workshop on Scientific Evolutionary Writing
+Vittorio Loreto
+January 30-31 2019 - Paris - Institute for Complex Systems
+
+
+**********************
+
+
+
+
+Towards novelty-driven recommender systems
+
+
+
+
+We get recommendations about everything and in a pervasive way. We get books recommended, music recommended, food recommended, items to buy, hotels, trips. Even ideas. We are so used to receive suggestions and tips and in a way or another we constantly ground our decisions on the constant flux of stimuli we receive or we seek for. The entanglement of our behaviours with the technology powering recommender systems is nowadays so strong that perhaps we cannot even conceive our life without them. 
+
+
+Like compasses in a complex conceptual space, recommender systems exploit the knowledge about user behaviours and about the structure of the conceptual space itself, to suggest us new directions to take, new experiences. The underlying idea is that we may possibly like something similar to what we liked in the past or something someone “similar” to us liked in his/her personal path. The notion of similar is key. Two users can be similar if they went through similar experiences. Two items can be similar because they share some structural, functional or semantic features. Two items can be similar also if they co-occurred in the experiences of several users. This idea is brilliantly in place in almost all recommender systems with little variations taking into account personal histories, historical dependences, etc. And it turns out to be also very effective in many sectors where the abundance of data about people choices allows for a very precise profiling of people and items. But all that glitters is not gold!
+
+
+Recommender systems also have drawbacks. The main one can be dubbed the “tragedy of exploit/explore”. In suggesting us future experiences similar to those we had already or we may possibly like learning from others’ experiences, these systems are nudging us to go through similar experiences, though every time slightly different. They push us to “exploit”. The constant exposure to recommendations is progressively creating what we could name a “comfort zone”, an area, in the space of items or experiences, where we feel at ease. Any suggestions lying in this area  coming from a recommender system would be likely well-perceived. On the other had anything outside this area is very likely to be disregarded or even perceived as uncomfortable. This implies a strong reduction of our ability to “explore”, i.e., experience radically new things. If this is positive for a company that aims at fidelising its customers, it can have serious drawbacks if one things about news and opinions, because the comfort zone here can represent a system of prejudices, preventing us from a clear reading of the reality, reducing in fact our level of awareness. This is well-know confirmation bias that is held to be responsible  for the birth and evolution of the echo-chambers. So one important question is whether is possible to overcome the limitations of current recommender systems, conceiving instead a new generation of recommender systems able to shift the ration exploit/explore.
+
+
+The notion of exploration is closely linked to that of “new”. It is new anything that we experience for the first time, either at a personal level (for instance a new book we are about to read) or at a collective level (for instance a book we just wrote). The question of the exploration of the new is a fascinating one that puzzled generations of scholars. How can we conceive and define the space where novelties can be experienced? How can one estimate the probability for a new event to occur? A very interesting hypothesis in this area has been proposed by Stuart Kauffman, who introduced the the notion of Adjacent Possible. Adjacent Possible is loosely defined as the set of things - could be molecules, organisms, technological products, ideas, etc. - that are one step away from what actually exists and that could be reached by the incremental recombination of existing elements. This hypothesis is exploiting the dichotomy actual/possible mentioned for instance by Francois Jacob. Actual is what we experincesìd already, while possible is the set of experiences we…..
+
+
+
+
+Sjdk oedjedemkmce

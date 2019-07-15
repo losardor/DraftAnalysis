@@ -1,0 +1,28 @@
+﻿Relevance of topology in neuroscience and deep learning 
+
+
+Structure:
+1. Focus on DL/ML
+2. AI and neuroscience, an old liaison 
+3. Benefits and relation to the understanding of how we understand the world 
+4. Place cells, grid cells, and other encodings
+5. Topology, the arcane math of shapes
+6. Topology as an economical language to encode structure, shape
+7. Future developments
+8. ??
+
+
+
+
+Artificial intelligence is the new gold. Companies are rushing to hire young talented deep learning wizards; universities furiously restructure their teaching offer to include courses on any flavour of machine learning, while traditionally boringly gray computer science conferences get revamped into dazzling shows of disruptive deep learning applications and newly found egos. 
+It wasn’t always so. Indeed, the recent AI renaissance, after decades of so-called AI winter, comes in the wake of the explosion of computing (GPU mainly) power and wide availability of large annotated datasets. Its roots however lie in far more delicate instruments: connections. Originally, artificial neural networks were in fact conceived as a
+ 
+
+
+* AI and neuroscience. Lots of hype recently about the advances of artificial intelligence, its applications, its benefits and its risks. 
+* Power/benefits etc. At the core of it all, there is the idea that the machines might one day emulate if not surpass our capacity to understand, plan and potentially change the world. 
+
+
+* Emergence of At the same time, almost unseen, an arcane branch of mathematics started making its way into the arenas of machine learning, data science and -also- AI. 
+* Topology and its successes
+* What is topology? It is based on simple ideas o f

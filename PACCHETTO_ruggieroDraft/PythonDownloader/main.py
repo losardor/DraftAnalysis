@@ -127,7 +127,7 @@ def retrieve_revisions(service, file_id):
   return None
 
 #uploadFile('Migo.jpg', 'Migo.jpg', 'image/jpeg')
-query = "('16mIeA42QEC4QTXxNhQBwoAWMRe7UHIbB' in parents) and (mimeType contains 'application/vnd.google-apps.document')"
+query = "('1e8X1GJiZ3-CIwWCK9k-7m_0zNK3EJ27D' in parents) and (mimeType contains 'application/vnd.google-apps.document')"
 fileIds, filenames = searchFile(1000,query)
 for fileid,  filename in zip(fileIds, filenames):
     downloadFile(fileid, filename)
