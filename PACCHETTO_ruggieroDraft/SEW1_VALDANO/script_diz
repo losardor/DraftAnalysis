@@ -1,7 +1,0 @@
-#!/bin/csh
-
-
-	foreach file (diz*.pul)
-	./pulisci_dizionari.pl $file
-	sort -g $file.pul > $file.sort
-	end

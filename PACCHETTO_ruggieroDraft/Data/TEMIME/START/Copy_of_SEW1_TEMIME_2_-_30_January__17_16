@@ -1,0 +1,19 @@
+﻿Research program
+
+
+Modeling HCV spread in Egyptian hospitals
+
+
+Due to a widespread iatrogenic contamination in the 1960’s, Egypt currently has the highest hepatitis C virus (HCV) prevalence worldwide, with up to 30% seropositivity in individuals over 50. Hospitals play a major part in sustaining this epidemic. Indeed, hospitalized patients undergo a high number of invasive procedures during which they are at risk of acquiring HCV because of imperfect compliance with infection control recommendations. This risk is increased by the high HCV prevalence among patients admitted to hospitals, due to their age and medical history.
+
+
+Hence, controlling the epidemic of HCV in Egypt requires the control of transmission within hospitals. This may involve a wide array of interventions, such as increasing hygiene, cohorting healthcare workers, isolating or taking special care with HCV-positive patients, etc. However, in order to propose efficient strategies to improve this control, a better understanding of HCV spreading dynamics within hospitals is needed. In this context, my research program aims at developing tools to study hospital HCV transmission in Egypt, based on epidemiological data, and using these tools to identify targets for control strategies and assess these strategies.
+
+
+Mathematical models are a useful tool in epidemiology, to better understand infection spread, propose and assess control strategies, and predict future dynamics. Within healthcare settings, they have been used extensively in the last decades to study the spread of (often resistant) bacterial pathogens, as well as viruses such as influenza or Ebola. Several models of HCV spread within drug-user populations in developed countries have also been proposed, as well as a few models of HCV spread within the general Egyptian population, allowing to estimate its epidemic potential in future years. However, no model of HCV spreading dynamics within hospitals has ever been developed. The project I envision involves developing such a model, using an individual-based stochastic framework.
+
+
+As mentioned before, HCV may be acquired within hospitals through blood exposure, during an invasive procedure (e.g. insertion of an intravenous catheter or dialysis) performed with contaminated equipment. The model will therefore have to reproduce the daily exposure to at-risk procedures of hospitalized patients, as well as the risk of equipment contamination. In order to simulate the spread of HCV from one patient to another, a detailed description of potential equipment sharing between patients will also need to be performed. This could result from either the geographical proximity of patients within the hospital (e.g. being in the same ward), the similarity of procedures they undergo and the sharing of a healthcare worker (or a combination of these factors). In this regard, this project will benefit from the detailed data collected in a recent epidemiological study performed in a Cairo hospital. During this 6-month observational study, 500 patients were followed up from hospital admission to discharge. All their moves within the hospital were recorded (at the room level), as well as all the invasive procedures that were performed on them - including information on place, time, date and nature of the procedure, and healthcare worker performing the procedure. Data on per-procedure, per-hospital department and per-healthcare worker type infection control behavior was also collected.
+
+
+A major national-scale screening program is currently underway in Egypt, with the aim of having identified and put under treatment most of the country’s HCV infected individuals before 2020. The official objective of the Egyptian government is total HCV eradication by 2025. By targeting of the main drivers of the current epidemic, this project has the potential to help achieve this objective.

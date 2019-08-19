@@ -1,0 +1,42 @@
+﻿Chopping Down the Syntax Tree 
+(version 1)
+
+
+If Noam Chomsky’s Visiting Martian would return to our planet to catch up on the latest evolution in linguistics, they would undoubtedly be intrigued by a new species of language researchers: construction grammarians. Construction grammarians come in different shapes and sizes, but they all embrace the idea that all linguistic knowledge can be represented as form-meaning mappings called constructions. Unfortunately, construction grammarians are also furtive creatures who have been reluctant to offer more precise definitions for their most important data structure, which would only further arouse the Visiting Martian’s interest. It should also interest us: understanding what constructions are and what they can do is more than a matter of intergalactic anthropology, as it completely changes the way we understand the linguistic capacity of humans.
+
+
+One striking behavior of construction grammarians is that they avoid to use the tree diagrams for analyzing sentences that other linguists seem to love so much. We find our Visiting Martian contemplating this behavior while sitting on a bench at the Place des Vosges, one of the most peaceful squares in the Marais quarter of Paris. Suddenly, the Martian is struck by the perfect square shape of their surroundings, and by the perfect bosquet of linden trees that are clipped into perfect squares as well. They realize that this is essentially how Chomsky sees language: as a “perfect system” (Chomsky 1995:1). They also suddenly realize that linguistic trees are pruned in the same way as the lindens, and why construction grammarians don’t like that.
+
+
+The idea of a “perfect system” permeates all theories of mainstream linguistics since the Chomskyan revolution, which all incorporate a phrase structure component for generating tree diagrams. Most linguists today are too young to remember the days before the revolution and have grown up taking such mathematically well-defined tree structures for granted. While there is some variation among theories about what kinds of trees are allowed, they all agree on three default primitives: (a) all local tree configurations consist of a single parent node, (b) syntactic constituents are continuous and cannot be interrupted by other constituents, and (c) all kinds of linguistic information can be “read off” the syntax tree.
+
+
+[EXAMPLE OF TREE DIAGRAM]
+
+
+The Martian continues their walk in the streets of Paris and soon discovers trees that have been allowed to grow naturally, and that are quite different from the perfectly trimmed topiaries of the Marais quarter or the lush gardens of the Versailles Palace. The Martian now understands that construction grammarians are not interested in Chomsky’s “idealized speaker-listener, in a homogeneous speech community, who knows its language perfectly” (Chomsky 1965). Instead, construction grammarians want to capture the living aspects of language, how it is learned and used, how linguistic conventions emerge in population. They understand that phrase structure trees are not adequate formalizations of their analyses, but haven’t yet figured out a concrete alternative.
+
+
+Linguists who used tree structures before Chomsky’s idealized speaker-listener would break the phrase structure primitives (a) and (b) without batting an eyelash: they allowed for (a) multiple parents for the same constituents, and (b) discontinuous constituents. McCawley (1982) gives the following examples:
+
+
+[INCLUDE EXAMPLES]
+
+
+McCawley (1982) argues that the assumptions of single dominance and continuity in mainstream linguistics is a historical accident without any empirical justification. He writes that early Chomskyan linguists were familiar with automata theory but not with graph theory, so they were able to formalize rewrite rules for describing sets of strings, but not rules that represent sets of trees. If strings are more basic than trees, then 
+
+
+
+
+
+
+
+
+
+
+
+
+References
+Chomsky, Noam (1965). Aspects of a Theory of Syntax.
+Chomsky, Noam (1995). The Minimalist Program. 
+McCawley, James (1982). [ref]

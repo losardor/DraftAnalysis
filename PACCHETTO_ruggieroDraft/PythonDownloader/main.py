@@ -1,11 +1,10 @@
 from __future__ import print_function
-import httplib2
+from httplib2 import Http
 import os, io
 
 from apiclient import discovery
-from oauth2client import client
-from oauth2client import tools
 from oauth2client.file import Storage
+from oauth2client import file, client, tools
 from apiclient.http import MediaFileUpload, MediaIoBaseDownload
 try:
     import argparse
@@ -16,13 +15,12 @@ import auth
 # If modifying these scopes, delete your previously saved credentials
 # at ~/.credentials/drive-python-quickstart.json
 SCOPES = 'https://www.googleapis.com/auth/drive'
-CLIENT_SECRET_FILE = 'credentials.json'
-APPLICATION_NAME = 'Drive API Python Quickstart'
-authInst = auth.auth(SCOPES,CLIENT_SECRET_FILE,APPLICATION_NAME)
-credentials = authInst.getCredentials()
-
-http = credentials.authorize(httplib2.Http())
-drive_service = discovery.build('drive', 'v3', http=http)
+store = file.Storage('storage.json')
+creds = store.get()
+if not creds or creds.invalid:
+    flow = client.flow_from_clientsecrets('client_secret.json', SCOPES)
+    creds = tools.run_flow(flow, store)
+drive_service = discovery.build('drive', 'v3', http=creds.authorize(Http()))
 
 def listFiles(size):
     results = drive_service.files().list(
@@ -87,50 +85,79 @@ def searchFile(size,query):
 from apiclient import errors
 # ...
 
-def print_revision(service, file_id, revision_id):
-  """Print information about the specified revision.
+# def print_revision(service, file_id, revision_id):
+#   """Print information about the specified revision.
 
-  Args:
-    service: Drive API service instance.
-    file_id: ID of the file to print revision for.
-    revision_id: ID of the revision to print.
-  """
-  try:
-    revision = service.revisions().get(
-        fileId=file_id, revisionId=revision_id, alt='media').execute()
-    #print(revision.items())
-    print('Revision ID: %s' % revision['id'])
-    print('Modified Date: %s' % revision['modifiedTime'])
-    if revision.get('pinned'):
-      print('This revision is pinned')
-  except errors.HttpError, error:
-    print('An error occurred: %s' % error)
+#   Args:
+#     service: Drive API service instance.
+#     file_id: ID of the file to print revision for.
+#     revision_id: ID of the revision to print.
+#   """
+#   try:
+#     revision = service.revisions().get(
+#         fileId=file_id, revisionId=revision_id, alt='media').execute()
+#     #print(revision.items())
+#     print('Revision ID: %s' % revision['id'])
+#     print('Modified Date: %s' % revision['modifiedTime'])
+#     if revision.get('pinned'):
+#       print('This revision is pinned')
+#   except errors.HttpError, error:
+#     print('An error occurred: %s' % error)
 
-from apiclient import errors
-# ...
+# from apiclient import errors
+# # ...
 
-def retrieve_revisions(service, file_id):
-  """Retrieve a list of revisions.
+# def retrieve_revisions(service, file_id):
+#   """Retrieve a list of revisions.
 
-  Args:
-    service: Drive API service instance.
-    file_id: ID of the file to retrieve revisions for.
-  Returns:
-    List of revisions.
-  """
-  try:
-    revisions = service.revisions().list(fileId=file_id).execute()
-    revisionIds = [rev['id']  for rev in revisions['revisions']]
-    return revisionIds
-  except errors.HttpError, error:
-    print('An error occurred: %s' % error)
-  return None
+#   Args:
+#     service: Drive API service instance.
+#     file_id: ID of the file to retrieve revisions for.
+#   Returns:
+#     List of revisions.
+#   """
+#   try:
+#     revisions = service.revisions().list(fileId=file_id).execute()
+#     revisionIds = [rev['id']  for rev in revisions['revisions']]
+#     return revisionIds
+#   except errors.HttpError, error:
+#     print('An error occurred: %s' % error)
+#   return None
 
 #uploadFile('Migo.jpg', 'Migo.jpg', 'image/jpeg')
-query = "('1e8X1GJiZ3-CIwWCK9k-7m_0zNK3EJ27D' in parents) and (mimeType contains 'application/vnd.google-apps.document')"
-fileIds, filenames = searchFile(1000,query)
+query = "('1k2AQbl6NPYwFx4QJWy5wRAZ9IFNeGcpU' in parents) and (mimeType contains 'application/vnd.google-apps.document')"
+
+if os.path.isfile("to_download.txt"):
+  f = open("to_download.txt", "r")
+  f1 = f.readlines()
+  fileIds = []
+  filenames = []
+  for x in f1:
+    fileIds.append(x.split(" ")[0])
+    filenames.append(x.split(" ")[1])
+  
+  
+else:
+  fileIds, filenames = searchFile(1000,query)
+  with open("to_download.txt", "w+") as f:
+    for fileid, filename in zip(fileIds, filenames):
+      print(filename)
+      f.write(fileid + " " + filename + "\n")
+
+
 for fileid,  filename in zip(fileIds, filenames):
     downloadFile(fileid, filename)
+    
+    with open("to_download.txt", "r") as f:
+      lines = f.readlines()
+
+    with open("to_download.txt", "w") as f:
+      for line in lines:
+        if line != fileid + " " + filename  + "\n":
+          f.write(line)
+
+os.remove("to_download.txt")
+print("finished")
 #items = retrieve_revisions(drive_service, '1PYnidPjQaKVEZz8ZJNBJ-qBZluLdDdyvtiSseMd3bSQ')
 #print_revision(drive_service, '1PYnidPjQaKVEZz8ZJNBJ-qBZluLdDdyvtiSseMd3bSQ',items[0])
 #print(items)
