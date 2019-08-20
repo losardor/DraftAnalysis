@@ -1,0 +1,11 @@
+﻿Chopping Down the Syntax Tree 
+(version 2)
+
+
+Noam Chomsky revolutionized the field of linguistics in the 1950s, but is now facing to be dethroned himself. In the Chomskyan view, the human language faculty is an autonomous and “perfect system” that interfaces with other mental modules. In the past few decades, however, a new paradigm has emerged that rejects Chomsky’s modular approach and that treats language as an integral part of cognition instead. The grammatical theory that embodies this new paradigm the most is called construction grammar.
+
+
+Construction grammars exist in different flavors, but they all agree that all linguistic information can be represented using a single data structure: constructions. Unfortunately, construction grammarians have been reluctant to offer a precise definition of what a construction is. Instead, they informally describe their most important data structure as “any mapping between meaning and form”. This lack of formal rigour invites linguists to recycle the formal tools that were developed within mainstream linguistics, or even to abandon formalization completely.
+
+
+The most widespread formal analysis in linguistics is

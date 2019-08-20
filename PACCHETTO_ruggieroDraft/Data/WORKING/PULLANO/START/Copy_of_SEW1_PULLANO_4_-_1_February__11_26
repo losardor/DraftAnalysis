@@ -1,0 +1,32 @@
+﻿Extracting meaningful mobility flows from high-resolution individual trajectory data for epidemic metapopulation models  
+
+
+
+
+Controlling and containing the epidemic diffusion is an important  healthcare challenge worldwide. Since early recorded history, populations have been affected by devastating epidemics that had destroyed both the social and economic environments. Public Health institutions collaborate with researchers to plan and evaluate targeting strategies to prevent or contain outbreaks.There are several epidemiological practices used for doing it, an ever-evolving challenge is  modeling epidemic spreading to identify key mechanisms of the epidemic transmission processes. 
+
+
+Modern epidemic models prove that principal drivers of the epidemic spreading are the subpopulations structures ( i.e. geography or social structures) and human mobility fluxes. 
+An approach largely used in literature  to assess the role of these features and their inter-correlation is a metapopulation approach. Metapopulation model is a spatially explicit epidemic model that takes into account host population structure in space and associated mobility. Informing the model needed to know census of host populations and individual daily life behaviors. But, tracking individual behaviors is very difficult challenge,  especially in developing countries where the . 
+
+
+Mobile phone data offers the opportunity to sense individual trajectories and social behaviors all around the world. It have been one of the fastest technologies over the last decade, reaching both urban and rural populations. Every time that an user makes a call or texts a message a Call Detail Record (CDR) is generated. Such data have been widely used to characterize individual patterns of mobility and were recently integrated into metapopulation models to understand the spread of infectious disease epidemic, such as e. g. malaria or cholera epidemics. Little attention has however been devoted to the process of aggregation behind the extraction of the mobility flows relevant to disease propagation from high-resolution individual trajectory data. 
+
+
+We addressed this question by considering three of the most commonly used methods that estimate the coupling between different locations based on individual mobility from CDRs. We selected: (i) an approach at high resolution that quantifies the coupling probability as the total number of users’ displacements between any two locations on two consecutive calls (Displacement D matrix).  Then, we considered two methods that do not account explicitly of the individual mobility. One measures the coupling as the number of calls done by residents in each location (Location L matrix) and the other takes into account only the most visited location of residents during daytime (Commuting C matrix).
+
+
+By analyzing the estimated monthly matrices from January-December 2013 data of CDRs in Senegal (9,569,425 users), we found the largest discrepancies between the D matrices, that considers explicitly all the individual daily displacements at high granularity, and the other two, that consider the probability to move from the home location to all the other municipalities (L) and to the most visited location (C), respectively. 
+
+
+
+
+Comparing D with the other two matrices, we found that in D the outgoing probability from a patch is much smaller (absolute relative difference >100%) and that the long-range links are more often undetected. To assess the role of such differences on disease diffusion we integrated the estimated coupling matrices in a metapopulation model that explicitly accounts for disease dispersal due to visitors to a location or to returning resident to their municipality of residence. We evaluated how the simulated epidemic behavior depends on the underlying mobility source by investigating the time to first infection in each location and the invasion epidemic paths from the seed.
+
+
+Focusing on synthetic influenza-like and Ebola-like disease spreading scenario, we have seen that a global level the spreading in D is slower. In fact, the epidemic arrival time measured in D is around 100 days delayed with L and C in which is more similar and highly correlated. Furthermore, arrival time in L and C is in accord with the epidemic arrival time quantified in other works. That suggests that D overestimate the arrival time. Instead, the high similarity on the epidemic invasion trees between C,L says that all secondary visited locations during the day do not have a strong impact on the outbreak spatial propagation.
+
+
+
+
+This work can provide useful insight on the impact of the evaluation of the individual trajectories. It suggests that in metapopulation models is not necessary taking tracks of all consecutive displacements of the individuals. Additionally, the impact of no-work visited locations is lower when the outbreak spreads fast. Therefore, in this scenario considering only the commuting mobility could be a good approximation of the individual mobility.

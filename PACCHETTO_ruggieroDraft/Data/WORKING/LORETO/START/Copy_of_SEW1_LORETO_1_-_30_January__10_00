@@ -1,0 +1,24 @@
+﻿Contribution for the Workshop on Scientific Evolutionary Writing
+Vittorio Loreto
+January 30-31 2019 - Paris - Institute for Complex Systems
+
+
+800 words, 6-8 paragraphs
+
+
+
+
+**********************
+
+
+
+
+Towards novelty-driven recommender systems
+
+
+
+
+We get recommendations about everything and in a pervasive way. We get books recommended, music recommended, food recommended, items to buy, hotels, trips. Even ideas. We are so used to receive suggestions and tips and in a way or another we constantly ground our decisions on the constant flux of stimuli we receive or we seek for. The entanglement of our behaviours with the technology powering recommender systems is nowadays so strong that perhaps we cannot even conceive our life without them. 
+
+
+Like compasses in a complex conceptual space, recommender systems exploit the knowledge about user behaviours and about the structure of the conceptual space itself, to suggest us new directions to take, new experiences. The underlying idea is that we may possibly like something similar to what we liked in the past or something someone “similar” to us liked in his/her personal path. The notion of similar is key. Two users can be similar if they went through similar experiences. Two items can be similar because they share some structural, functional or semantic features. Two items can be similar also if they co-occurred in the experiences of several users. This idea is brilliantly in place in almost all recommender systems with little variations taking into account personal histories, historical dependences, etc. And it turns out to be also very effective in many sectors where the abundance of data about people choices allow for a very precise profiling of people and items. But all that glitters is not gold!

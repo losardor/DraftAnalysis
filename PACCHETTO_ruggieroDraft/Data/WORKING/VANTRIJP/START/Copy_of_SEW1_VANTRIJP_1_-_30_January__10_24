@@ -1,0 +1,26 @@
+﻿Chopping Down the Syntax Tree
+
+
+If Noam Chomsky’s Visiting Martian would return to our planet to catch up on the latest evolution in linguistics, they would undoubtedly be intrigued by a new species of language researchers: construction grammarians. Construction grammarians come in different shapes and sizes, but they all embrace the idea that all linguistic knowledge can be represented as form-meaning mappings called constructions. Unfortunately, construction grammarians are also furtive creatures who have been reluctant to offer precise definitions for their most important data structure, but this would only further arouse the Visiting Martian’s interest. It should also interest us: understanding what constructions can do is more than a matter of intergalactic anthropology, as it may completely change the way we understand the linguistic capacity of humans.
+
+
+We find our Visiting Martian at the Place des Vosges, one of the most peaceful squares in the Marais quarter of Paris, contemplating a striking behavior of construction grammarians: they avoid using tree diagrams for analyzing sentences that other linguists seem to love so much. Suddenly, the Martian is struck by the perfect square shape of their surroundings, and notices the bosquet of linden trees that are clipped into perfect squares as well. They realize that this is essentially how Chomsky sees language: as a “perfect system” (Chomsky 1995:1).
+
+
+The idea of a “perfect system” permeates all theories of mainstream linguistics since the Chomskyan revolution, which all incorporate a phrase structure component for generating tree diagrams. Most linguists today are too young to remember the days before the revolution and have grown up under the assumption that such mathematically well-defined tree structures 
+
+
+Most linguists who are alive today are too young to have lived through the Chomskyan revolution and have grown up with the kind of Tree Diagrams that have now become commonplace in mainstream linguistics. Some theories are more radical than others (e.g. assuming that trees must be binary branching), but they all agree on two default primitives: (a) all local tree configurations consist of a single parent node, and (b) syntactic constituents are continuous and cannot be interrupted by other constituents:
+
+
+[EXAMPLE OF TREE DIAGRAM]
+
+
+
+
+
+
+
+
+References
+Chomsky, Noam (1995). The Minimalist Program.

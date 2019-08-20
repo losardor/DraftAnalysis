@@ -1,0 +1,13 @@
+﻿Schema:
+- Why study epidemics is  important
+-modeling epidemics
+-how mobile phone data could be used to model epidemics
+
+
+
+
+Controlling  and containing epidemics is an important healthcare challenge worldwide. Nowadays, people easily can move from different countries and human fluxes are coming increasingly complex and heterogeneous, it makes easier the propagations of pathogens all over the world. In this scenario, approaches that can surveille subpopulations movement are critical for enhancing containment and mitigation processes. Modeling epidemic diffusion for unraveling the features that are involved in the epidemic spreading is an ever-evolving challenge. It been proved that population structures, mobility and social interactions are the key drivers of the epidemics, therefore these factors and their interconnection are at the centre of disease dynamics and control investigations. Especially in less developed countries, all these informations, are not to easy to collect. 
+
+
+Mobile phone data have recently offered a pervasive opportunity to sense individual behavior in many aspects of daily life.  The past few years have seen an increasing interest in the use of mobile phone data, i.e. georeferenced data obtained from cell phones that track individual trajectories over time.  Mobile phones have been one of the fastest growing technologies over the last decade, reaching urban and rural populations across all over the world. CDRs provids extremely rich information on individuals’ displacements and communication activities. They have proven to be extremely useful in research studies, in fact such data have been widely used to characterize individual patterns of mobility and were recently integrated into metapopulation models to understand the spread of infectious disease epidemic, such as e. g. malaria or ch\\
+olera epidemics.  Little attentions are been devoted to the comprension on how to aggregate all that high resolution data of the CDRs  in order to extract human mobility informations.
