@@ -104,7 +104,7 @@ class draft:
     def Sliding(self):
         if os.path.exists("./ContigSlinding"):
             os.system("rm ContigSlinding")
-        os.system("bash runningWindow.sh"+self.filepath+"START"+self.filename[7:])
+        os.system("bash runningWindow.sh "+self.filepath+"START"+self.filename[7:])
         time.sleep(10)
         slid = pd.read_csv("ContigSliding", sep="\t", header=None)
         slid = slid.drop([0], axis =1)
