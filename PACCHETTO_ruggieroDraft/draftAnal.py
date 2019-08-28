@@ -1,9 +1,28 @@
 import os
-import datetime
+import datetime as dt
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import time
+
+def plot_sliding_prop(Data, prop):
+    x = np.linspace(0, 5, 100)
+    cmap = plt.get_cmap('jet')
+    fig = plt.figure(figsize=(14,6))
+    ax = fig.add_axes([1,1,1,1])
+    N = len(Data)
+    for i,author in enumerate(Data):
+        color = cmap(float(i)/N)
+        plot_df = pd.DataFrame()
+        x = [dt.strptime(draft.tag, '%d_%m_%H_%M') for draft in author.drafts]
+        sliding_avg = [float(getattr(draft.sliding,prop)) for draft in author.drafts]
+        plot_df['x']  = x
+        plot_df['y'] = sliding_avg
+        plot_df.sort_values(by='x')
+        plot_df.reset_index()
+        plot_df['Edit_norm'] = plot_df.index/plot_df.index.max()
+        plot_df.plot(ax =ax,x='Edit_norm',y='y',c=color, label=author.name)
+    plt.ylabel(prop)
 
 def files(path):
     for file in os.listdir(path):
@@ -104,8 +123,9 @@ class draft:
     def Sliding(self):
         if os.path.exists("./ContigSlinding"):
             os.system("rm ContigSlinding")
-        os.system("bash runningWindow.sh "+self.filepath+"START"+self.filename[7:])
-        time.sleep(10)
+        print("bash runningWindow.sh "+self.filepath+"START/"+self.Cname)
+        os.system("bash runningWindow.sh "+self.filepath+"START/"+self.Cname)
+        time.sleep(20)
         slid = pd.read_csv("ContigSliding", sep="\t", header=None)
         slid = slid.drop([0], axis =1)
         self.sliding = sliding(slid)

@@ -15,5 +15,5 @@ do
     head -c $(((i+1)*100)) $FILENAME | tail -c 100 >> temp/file2
     ./bcl2pezza
     rm temp/file1 temp/file2 temp/ris_bcl+100-100/Contig.file1
-    cat temp/ris_bcl+100-100/Contig.file2 | grep file1 >> ContigSlinding
+    cat temp/ris_bcl+100-100/Contig.file2 | grep file1 >> ContigSliding
 done
