@@ -1,7 +1,0 @@
-﻿Complex networks have fostered scientific progress in many fields, like neuroscience, economics, epidemiology, ecology, sociology. Their scope of application now stretches to the humanities, where they can uncover emergent properties that would escape traditional qualitative approaches. A lack of large, comprehensive datasets, however, still hurdles widespread application of quantitative methods, and specifically network theory, to disciplines beyond linguistics. A promising field which could benefit from network theory is history, through the analysis of large-scale historical records.
-
-
-In this work we study of the history of the Roman Catholic Church (RCC), through the quantitative analysis of the genealogical records of its ministers. The RCC has been one of the largest and most influential religious organizations in the World. It has shaped the history of Europe for two millennia. Nowadays, it counts 1.28 bn faithful, and is a major political actor at the global scale. Its bishops, the highest-ranking clergymen, hold both the religious and administrative power. Bishops generate other bishops through the act of consecration, giving rise to a genealogical structure. For each bishop, living and past, you can identify its consecrators, who are bishops themselves.
-
-
-We use a dataset containing consecration records of over 30,000 bishops, from the 15th century to present day. We then build a consecration network, whose directed links are consecrator-consecrated relations between bishops (nodes of the networks). The resulting network
