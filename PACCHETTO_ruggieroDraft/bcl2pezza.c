@@ -3,8 +3,6 @@
 /* fa lettura disassata dei file con lo stesso nome (indipendemente
    dalla directory; cio' permette di calcolare l'autoentropia
    utilizzando una sola directory */
-#include <gtk/gtk.h>
-#include <gdk/gdk.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
@@ -46,9 +44,10 @@ struct info_file *G;
 int Ng;
 int *lun_zip;
 
+#define MIN(x, y) (((x) < (y)) ? (x) : (y))
 
-
-int compara ( int *p1, int *p2) {
+int compara ( const void *p, const void *q) {
+  int *p1 = p, *p2 = q;
   if( lun_zip[*p1] < lun_zip[*p2] ) {
     return -1;
   };
@@ -252,38 +251,38 @@ int calcola(char *buff,int l,int *dist, char *nome){
       pmax = 0;
       qmax = 0;
       while( p != 0 ) {
-	lung = 1;
-	/* pezza a colori per disassare la ricerca nello stesso file*/
+        lung = 1;
+        /* pezza a colori per disassare la ricerca nello stesso file*/
 
-	if( strcmp((char *) G[h].nome,nome) != 0 || i != p ) {
-	  while( (buff[i+lung] == G[h].buff[p+lung]) && (p+lung <= G[h].lung)
-		 && (i+lung <= l )) {
-	    lung++;
-	  };
-	};
-	if( lung > m_lung ) {
-	  m_lung = lung;
-	  pmax = p;
-	};
-	if( lung > 2 ) {
-	  lung = 1;
-	  while( q > pmax + 1) {
-	    lung = 1;
-	    if  ( strcmp( (char *) G[h].nome,nome) !=0 || i+1 != q ) {
-	      while( (buff[i+1+lung] == G[h].buff[q+lung])  
-		     && (q+lung <= G[h].lung)
-		     && (i+1+lung <= l ) ) {
-		lung++;
-	      };
-	    };
-	    if( lung > q_lung ) {
-	      q_lung = lung;
-	      qmax = q;
-	    };
-	    q = G[h].indice[q];
-	  };
-	};
-	p = G[h].indice[p];
+        if( strcmp((char *) G[h].nome,nome) != 0 || i != p ) {
+          while( (buff[i+lung] == G[h].buff[p+lung]) && (p+lung <= G[h].lung)
+          && (i+lung <= l )) {
+            lung++;
+          };
+        };
+        if( lung > m_lung ) {
+          m_lung = lung;
+          pmax = p;
+        };
+        if( lung > 2 ) {
+          lung = 1;
+          while( q > pmax + 1) {
+            lung = 1;
+            if  ( strcmp( (char *) G[h].nome,nome) !=0 || i+1 != q ) {
+              while( (buff[i+1+lung] == G[h].buff[q+lung])  
+              && (q+lung <= G[h].lung)
+              && (i+1+lung <= l ) ) {
+          lung++;
+              };
+            };
+            if( lung > q_lung ) {
+              q_lung = lung;
+              qmax = q;
+            };
+            q = G[h].indice[q];
+          };
+        };
+        p = G[h].indice[p];
       };
       /* ricerca residua su q */
       if( m_lung > 1 ) {
@@ -701,14 +700,14 @@ int main( int   argc,
 
   /*printf("\nInserisci dimensione dei GRANDI\n" );*/
   /*while( scanf("%d",numero)  < 0 );*/
-  GRANDE = 100;
+  GRANDE = 300;
   /**numero;*/
 
 
   /*printf("\nInserisci dimensione dei PICCOLI\n" );*/
 
   /*while( scanf("%d",numero)  < 0 );*/
-  PICCOLO = 100;
+  PICCOLO = 300;
   /**numero;*/
 
 
