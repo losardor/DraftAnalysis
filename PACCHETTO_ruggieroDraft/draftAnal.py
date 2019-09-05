@@ -1,5 +1,5 @@
 import os
-import datetime as dt
+from datetime import datetime as dt
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -61,7 +61,7 @@ def cleanContig(directory, filename, output = False):
     except:
         print(filename+ " is not in the correct format for this analysis")
     time = dateTime[3]+':'+dateTime[4]
-    tag = pd.to_datetime(date + ' ' + time).strftime("%d_%m_%H_%M")
+    tag = dt.strptime(date + ' ' + time, '%d-%m-%Y %H:%M').strftime("%d_%m_%H_%M")
     df = pd.read_csv(directory+filename, header=None)
     
     df = df[0].str.split("_", n=10, expand = True) 
@@ -125,7 +125,7 @@ class draft:
             os.system("rm ContigSlinding")
         print("bash runningWindow.sh "+self.filepath+"START/"+self.Cname)
         os.system("bash runningWindow.sh "+self.filepath+"START/"+self.Cname)
-        time.sleep(20)
+        time.sleep(2)
         slid = pd.read_csv("ContigSliding", sep="\t", header=None)
         slid = slid.drop([0], axis =1)
         self.sliding = sliding(slid)
