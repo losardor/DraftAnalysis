@@ -125,7 +125,7 @@ from apiclient import errors
 #   return None
 
 #uploadFile('Migo.jpg', 'Migo.jpg', 'image/jpeg')
-query = "('1oo5GMdDUylydfwZnhJ0G7TrA8mRiDaLw' in parents) and (mimeType contains 'application/vnd.google-apps.document')"
+query = "('1fbJPZ7qzX8dwjY_yC0wm_q9K2GcpKU-h' in parents) and (mimeType contains 'application/vnd.google-apps.document')"
 
 if os.path.isfile("to_download.txt"):
   f = open("to_download.txt", "r")
