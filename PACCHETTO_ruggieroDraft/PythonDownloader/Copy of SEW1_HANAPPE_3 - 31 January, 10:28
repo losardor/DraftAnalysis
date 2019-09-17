@@ -1,0 +1,36 @@
+﻿* The shape of a plant is influenced by the biological processes in the plant and by external, environmental factors. 
+   * For example, the position of the flowers on the shoot of the Arabidopsis thaliana is closely related the  concentration of auxin in the stem cells in the apical meristem.
+* To understand whether variations in the phyllotaxis are due to genetic expressions or to other factors, it is necessary to measure a large set of plants.
+   * To undertake this study, we need an automatic and inexpensive phenotyping station that can scan a hundred plants a day.
+* We built the 3D scanner for such a phenotyping station using off-the-shelf components and open source software.
+* * Although now used indoor, the work is part of the development of robotic tools that can help predict where a farmer will have to intervene (early stress detection) but also collect data on plants that can be used for scientific research [what scientific research?].
+* We strongly feel that the 3D scanning is a required step to develop robotics tool that can converse with farmers about the plants
+* We need accessible tools that can get the shape of plants. We’re building it up slowly.
+* * We developed a first data processing pipeline that takes a series of images of a single A. thaliana plant as input and that provides the list of angles and internode lengths as output.
+* The results of the 3D scanner are satisfying.
+   * The scanner produces results with an error margin less than the error made by a human operator.
+   * We evaluated the precision of each step of the pipeline using synthetic data produced by a computational model of A. thaliana.
+   * The speed-up of the scanner, compared to manual measurements, is N.
+* We believe that the phenotyping station creates new opportunities for researchers who have to analyse large sets of plants and who have a limited budget.   
+   * The phenotyping station may also create new opportunities for professionals who would like to introduce the 3D screening of their plants in their work flow.   
+
+
+The shape of a plant can give you insights into the biological processes that drive its growth. These processes depend on numerous factors, some specific to the plant, such as its genetic material, and some external to the plant, such environmental conditions. 
+A studies that want to linking genetic features or environmental conditions to plant traits will be limited by the volume and the quality of data they can obtain.
+We need advanced phenotyping stations. We also have to make these widely available.
+
+
+* Although now used indoor, the work is part of the development of robotic tools for crop monitoring:
+   * Help predict where a farmer will have to intervene (early stress detection) 
+   * Collect much more phenotyping data on plants for scientific research directly in the field.
+* We strongly feel that the 3D scanning is a required component to develop robotics tool that can converse with farmers about the plants
+* We need accessible tools that can get the shape of plants. We’re building it up slowly.
+
+
+
+
+For example, the position of the flowers on the shoot of the Arabidopsis thaliana is closely related the  concentration of auxin in the stem cells in the apical meristem. The young plant first grows a rosetta of leaves close to the ground. When it goes into flowering its stems shoot up and flowers and fruits develop around the stem in a (mostly) spiral organisation. Between each successive flower there is a small stem and successive flowers are positioned at different horizontal angles. On average, the angle between them is 137 degrees. This spatial organisation results from the interaction between three zones of  XXX cells in the tip of the stem and has been described in detail elsewhere. This arrangement of the fruits along the stem, also called its phyllotaxis, is not perfect and errors may appear. A common error is the inversion of the angles, where flowers with sequence numbers i=1, 2, 3, 4 at a angles of 137° are produced in the order 1, 3, 2, 4 at angles 274°, 223°, and 274°.
+
+
+To understand whether the errors in the phyllotaxis are due to genetic expressions or to other factors, it is necessary to measure a large set of plants. To answer that question we have to study the A. thaliana closely and measure the series of angles on a large number of plants, compare several genetic variations, and grow them in different conditions. Without the assistance of digital scanning tools this task is impossible to handle by a single person. To undertake this study, we need an automatic and inexpensive phenotyping station that can scan a hundred plants a day.
+We built the 3D scanner for such a phenotyping station using off-the-shelf components and open source software. We therefore designed a 3D scanning station that can automatically analyse the phyllotaxis of the flowering A thaliana and list the series of angles and internode distances for every plant. The installation uses high-resolution RGB cameras to take pictures of the plant at different angles and sends the pictures to a processing pipeline that in sequence determines the 3D shape using space carving, the boundary volume as a mesh structure using XXX, the main skeleton using active contours, the tree structure using the minimum spanning tree algorithm, and the series of angles and internodes distances through the analysis of the tree structure. Each step of the pipeline will be documented in detail below.

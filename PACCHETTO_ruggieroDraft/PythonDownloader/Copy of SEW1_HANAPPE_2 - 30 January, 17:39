@@ -1,0 +1,26 @@
+﻿Structure 1:
+* We designed an inexpensive phenotyping station.
+* With the help of this phenotyping station we scanned the Arabidopsis thaliana and extracted the angles and the length of the internodes between successive siliques on the main stem.
+* We compared the computed angles against the manual measurements.
+* We evaluated the processing pipeline against data of virtual plant using a computational model of A. thaliana.
+* With of the help of this solution, we can now automate the analysis of the phyllotaxy of large sets plants.  
+* This large dataset is need to study the link between genetic variation and traits in the phyllotaxy.  
+
+
+Structure 2:
+* The shape of a plant is influenced by the biological processes in the plant and by external, environmental factors. 
+* A precise observation of the plant’s shape may provide information on the plant’s health or on its environment.  … [This is too far fetched because we don’t have any data yet to back this up.]
+* …
+
+
+Structure 3:
+* The shape of a plant is influenced by the biological processes in the plant and by external, environmental factors. 
+* For example, the position of the flowers on the shoot of the Arabidopsis thaliana is closely related the hormone signaling and the concentration of auxin in the meristem.
+* However, we have to measure a large set of plants if we want to understand whether variations in the phyllotaxis are due to genetic expressions or to other factors.
+* To undertake this study, we must have an automatic and inexpensive phenotyping station at our disposal.
+* We therefore built such a phenotyping station using off-the-shelf components and open source software.
+* We developed a data processing pipeline that takes a series of images of a single plant as input and provides the list of angles and internode lengths as output.
+* We have compared the results with manual measurements.
+* We have evaluated each step of the pipeline on a series of synthesis images that was produced using a computational model of A. thaliana.
+* The phenotyping station creates new opportunities for researchers who have to analyse large sets of plants using a limited budget.   
+* The phenotyping station creates new opportunities for also for professionals who would like to introduce 3D screening of their plants in their work flow.
