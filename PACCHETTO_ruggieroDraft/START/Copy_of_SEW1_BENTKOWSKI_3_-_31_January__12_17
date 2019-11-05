@@ -1,0 +1,47 @@
+﻿Using version 1 & 2 (from scratch) -> 3
+
+
+Modelling of evolution from molecules to species
+
+
+1. Intro        
+2. Why it’s important                 
+3. Case study of the major histocompatibility complex (MHC) protein and         genes
+4. How to do it
+5. Challenges         
+- The issue of mathematical training in biology        
+6. Where         to go next
+- evolution as a way to discover new useful molecules, perhaps?         
+------------------------------------------------------------------------------------------
+
+
+
+
+Like all great scientific theories, the theory of biological evolution is based on very few initial assumptions. An these are: inheritance, variation in offspring and natural selection. A very clean framework eventually allowing biologist to answer the most fundamental question in natural sciences - how thing came to be as we see them? How birds become so colourful? Why there two sexes? Not one. Or seven. Why there is only one type o oxygen-transporting protein and thousands types of virus-detection proteins?
+
+But when Charles Darwin laid out the foundations of natural selection, that are widely accepted even today, it was still unknown what is the agent of inheritance and how variation emerges in populations. It was not until XX years later when the concept of a gene was proposed and a discovery was made that these genes are embedded in the sequence of monomers of the polymeric structure of deoxyribonucleic acids - the DNA. And every inheritable trait has its roots in genes, whether it is glucose degradation by an enzyme or the length of a bird’s beak. 
+
+
+Experimenting is the bread and butter of all natural sciences, but experimenting with biological evolution it is difficult, expensive and time consuming. To draw firm conclusions from the experiments they need to involve a large cohorts of organism or need to be run for a very long time. Preferably both. The most famous is the Escherichia coli long-term evolution experiment established by Richard Lenski in 1988 and still running. It brought its most stunning results in its 3rd decade when bacteria evolved ability to feed on substance called citrite, which wild-type E. coli are famously incapable of doing. And E. coli are microorganisms doubling their population size in couple of hours when kept in favorable conditions. Evolution in vertebrates that reproduce every couple of weeks at best would take even longer.
+
+
+Enter the computer simulation. Since the invention of the transistor in the 1940’s electrical engineering developed computers from a very fast calculators capable of predicting cannon ball’s trajectory in time between firing it and hitting its target (an anecdote often told how the idea of an electronic computer was advertised to military officials to gain their financial support) to machines able to simulate car traffic in New Your City. In real time. Flawlessly. These two feature combined: flawless computation of huge quantity of data makes computers so appealing to theoretical biologist making them switch from pen and paper to keyboards and silicon. There are many ways to design a simulation, but one particular approach became very popular: agent-based modelling (ABM). ABMs were first championed in economic sciences and it tried to represented real people as, well, individual humans. Agents (humans) were stripped down to bare essentials, to couple of numbers important to the study case: age, sex, probability of avoiding taxes etc. And then the simulation runs. Agents interact with each others according to few rules laid out in the model, some of them get rich, some get poor and from this the big picture rises. You can tell if a country rises or falls. The same approach can be used in evolutionary studies. Instead of cultivating bacteria for 30 years, you can simulate them for 2 hours. You just need to know with bolts and cogs of the genetic machinery and population ecology are the crucial ones. 
+
+
+But the years of research have unveiled a world of unimaginable complexity! The path from molecular structure of a strap of DNA to, say, structure of an enzyme involves a large number of intermediate steps: first, the fragments of DNA (which are rather large molecules) have to be re-written into a more handy piece of information - the mRNA molecule small enough to be conveniently moved around the cell. But mRNAs are not a one-to-one copies of their templates. Eukaryotic genes are divided into small number of pieces called introns that code for something and exons that are ‘just’ spacers. The process of assembling a mature mRNA is called splicing and it can be done in a number of alternative ways omitting some introns and including others. One piece of DNA can produce a number of similar, but not identical forms of mRNA. And after this come other complications: chemical stability thus longevity of mRNA, how they are moved around. And then are the regulatory genes, e.g. the ones that regulate the size of a bird’s beak - and that is even more complicated.
+
+
+One of the most interesting problems that illustrate the need to work out the way how to link molecular mechanism to natural selection on population level is the case of major histocompatibility complex (MHC) genes. MHCs are a class of proteins found in all vertebrates responsible for detection and presentation to the immune system of foreign peptides thus protecting an animal against a vast array of pathogens: from viruses to skin parasites. In the recent decades it has been shown that they are not only selected based on their anti-pathogen capabilities, but also are subjected to the sexual selection. Animals unconsciously consider them when selecting their mates. Including humans.
+
+
+The problem is that the immune responses are one of the most complicated mechanisms found in biology! On top of the complexity delivered by DNA-to-protein production mechanism.  Implementing the whole system, with DNA-to-RNA transcription with alternative splicing, ensemble of proteins from number of peptide chains, docking of the foreign peptide, docking the T-cell receptors… one need to simplify. A lot.
+
+
+
+
+                
+
+
+
+
+… and then to put to the test in the lab.
