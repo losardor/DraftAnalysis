@@ -290,13 +290,13 @@ class draft:
             self.sliding = sliding(slid)
     
     def CountWords(self):
-        with io.open(self.filepath+"START/"+self.Cname, 'r', encoding='utf-8') as f:
+        with open(self.filepath+"START/"+self.Cname, 'r', encoding='utf-8') as f:
             text = f.read()
         wordnumber = len(re.findall(r'\w+', text))
         self.wordnumber = wordnumber
     
     def CharacterCount(self):
-        with io.open(self.filepath+"START/"+self.Cname,'r', encoding='utf-8') as f:
+        with open(self.filepath+"START/"+self.Cname,'r', encoding='utf-8') as f:
             text = f.read()
         self.CharCount = len(text)
 
