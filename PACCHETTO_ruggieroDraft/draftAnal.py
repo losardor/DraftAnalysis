@@ -251,6 +251,9 @@ class draft:
     wordnumber = np.nan
     CharCount = np.nan
 
+    def __str__(self):
+        return "Cname: "+ Cname + "Ccontig: " + Ccontig + "tag: " + tag
+
     def __init__(self, filename, index, author):
         self.author = author
         self.filename = filename
@@ -267,19 +270,24 @@ class draft:
         self.contigData = contigData
     
     def Sliding(self, C=False):
-        if C==False:
-            slid = crosswithinlist(self.filepath+"START/"+self.Cname)
+        with io.open(self.filepath+"START/"+self.Cname,'r', encoding='utf-8') as f:
+            text = f.read()
+        if len(text)<600:
+            self.sliding = sliding(pd.DataFrame(index = [], columns=["0"]))
         else:
-            if os.path.exists('ContigSliding.csv'):
-                os.remove("ContigSliding.csv")
-                #print("removed")
-            os.system("bash runningWindow.sh "+self.filepath+"START/"+self.Cname)
-            time.sleep(2)
-            slid = pd.read_csv("ContigSliding.csv", sep="\t", header=None, skipfooter=1)
-            slid = slid.drop(axis =1, columns=[0])
-            slid[0] = slid[1]
-            slid = slid.drop(axis =1, columns=[1])
-        self.sliding = sliding(slid)
+            if C==False:
+                slid = crosswithinlist(self.filepath+"START/"+self.Cname)
+            else:
+                if os.path.exists('ContigSliding.csv'):
+                    os.remove("ContigSliding.csv")
+                    #print("removed")
+                os.system("bash runningWindow.sh "+self.filepath+"START/"+self.Cname)
+                time.sleep(2)
+                slid = pd.read_csv("ContigSliding.csv", sep="\t", header=None, skipfooter=1)
+                slid = slid.drop(axis =1, columns=[0])
+                slid[0] = slid[1]
+                slid = slid.drop(axis =1, columns=[1])
+            self.sliding = sliding(slid)
     
     def CountWords(self):
         with io.open(self.filepath+"START/"+self.Cname, 'r', encoding='utf-8') as f:
