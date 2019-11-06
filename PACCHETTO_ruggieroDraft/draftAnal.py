@@ -273,7 +273,7 @@ class draft:
         with io.open(self.filepath+"START/"+self.Cname,'r', encoding='utf-8') as f:
             text = f.read()
         if len(text)<600:
-            self.sliding = pd.DataFrame(index = [], columns=["0"])
+            self.sliding = sliding(pd.DataFrame(index = [], columns=["0"]))
         else:
             if C==False:
                 slid = crosswithinlist(self.filepath+"START/"+self.Cname)
