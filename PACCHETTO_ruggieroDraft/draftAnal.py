@@ -50,7 +50,7 @@ def cleanFilename(filename, directory):
     return filename2
 
 def cleanContig(directory, filename, output = False):
-    #print(filename)
+    print(filename)
     if not os.path.exists(directory):
         print(directory+filename)
         raise NameError('Missing Data')
@@ -237,9 +237,14 @@ def size_compresse(text):
 class sliding:
     def __init__(self, data):
         self.data = data
-        self.avg = data.mean()
-        self.var = data.var()
-        self.var1 = np.var(np.diff(data[0]))
+        if not self.data.empty:
+            self.avg = data.mean()
+            self.var = data.var()
+            self.var1 = np.var(np.diff(data[0]))
+        else:
+            self.avg = np.NAN
+            self.var = np.NAN
+            self.var1 = np.NAN
 
 class draft:
     Cname = []

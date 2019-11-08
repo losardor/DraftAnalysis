@@ -700,14 +700,14 @@ int main( int   argc,
 
   /*printf("\nInserisci dimensione dei GRANDI\n" );*/
   /*while( scanf("%d",numero)  < 0 );*/
-  GRANDE = 10000;
+  GRANDE = 300;
   /**numero;*/
 
 
   /*printf("\nInserisci dimensione dei PICCOLI\n" );*/
 
   /*while( scanf("%d",numero)  < 0 );*/
-  PICCOLO = 10000;
+  PICCOLO = 300;
   /**numero;*/
 
 
