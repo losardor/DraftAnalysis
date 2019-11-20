@@ -49,8 +49,9 @@ def cleanFilename(filename, directory):
     os.rename(directory+filename, directory+filename2)
     return filename2
 
-def cleanContig(directory, filename, output = False):
-    print(filename)
+def cleanContig(directory, filename, verbose = False):
+    if verbose:
+        print(filename)
     if not os.path.exists(directory):
         print(directory+filename)
         raise NameError('Missing Data')
@@ -68,7 +69,7 @@ def cleanContig(directory, filename, output = False):
     df = pd.read_csv(directory+filename, header=None)
     
     df = df[0].str.split("_", n=10, expand = True) 
-    if output:
+    if verbose:
         print(filename)
         print(tag)
     df = df.drop([0,1,5,8], axis=1)
@@ -76,7 +77,6 @@ def cleanContig(directory, filename, output = False):
     df[10]=new[0]
     df['distance'] = new[1]
     df = df.replace(months)
-    #print(df.head())
     df['date'] = df[6].astype('str')+'-'+df[7].astype('str')+'-'+'2019'
     df['time'] = df[9].astype('str')+':'+df[10].astype('str')
     df['datetime'] = pd.to_datetime(df['date'] + ' ' + df['time'], dayfirst = True)
@@ -269,7 +269,7 @@ class draft:
         if not os.path.exists(self.filepath+'START/CleanContigs'):
             os.makedirs(self.filepath+'START/CleanContigs')
         self.contig = "Contig."+self.Cname
-        tag_temp, contigData, savepath = cleanContig(self.filepath+"START/ris_bcl+10000-10000/", self.contig)
+        tag_temp, contigData, savepath = cleanContig(self.filepath+"START/ris_bcl+10000-10000/", self.contig, verbose = False)
         self.tag = tag_temp
         self.Ccontig = savepath
         self.contigData = contigData
@@ -285,7 +285,6 @@ class draft:
             else:
                 if os.path.exists('ContigSliding.csv'):
                     os.remove("ContigSliding.csv")
-                    #print("removed")
                 os.system("bash runningWindow.sh "+self.filepath+"START/"+self.Cname)
                 time.sleep(2)
                 slid = pd.read_csv("ContigSliding.csv", sep="\t", header=None, skipfooter=1)
@@ -326,7 +325,6 @@ class author:
 
         drafts = list()
         for i, filename in enumerate(filenames):
-            #print(filename)
             drafts.append(draft(filename, i, self.directory))
         self.drafts = drafts
 
@@ -353,7 +351,9 @@ class author:
             self.drafts[Draft.index] = Draft
 
     
-    def FindLastMacro(self):
+    def FindLastMacro(self, verbose = False):
+        if verbose:
+            print("--"+self.name+"--")
         count1 = dt.strptime('01_01_01_01_2019', '%d_%m_%H_%M_%Y')
         count2 = dt.strptime('01_01_01_01_2019', '%d_%m_%H_%M_%Y')
         count3 = dt.strptime('01_01_01_01_2019', '%d_%m_%H_%M_%Y')
@@ -363,6 +363,8 @@ class author:
         lastMacro3=0
         lastMacro4=0
         for i,draft in enumerate(self.drafts):
+            if verbose:
+                print(draft.tag)
             if draft.Cname.split("_")[4] == '1':
                 if count1<dt.strptime(str(draft.tag)+'_2019', '%d_%m_%H_%M_%Y'):
                     count1 = dt.strptime(str(draft.tag)+'_2019', '%d_%m_%H_%M_%Y')
