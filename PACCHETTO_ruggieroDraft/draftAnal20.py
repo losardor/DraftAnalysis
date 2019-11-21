@@ -6,6 +6,7 @@ import os
 from datetime import datetime as dt
 import time
 import numpy as np
+import subprocess
 
 
 def initialize(PATH, verbose = False):
@@ -107,6 +108,12 @@ def Slide(Data, draft_dic, verbose = False):
             #print(draft)
             if os.path.exists('ContigSliding.csv'):
                 os.remove("ContigSliding.csv")
+            # process = subprocess.Popen(['bash runningWindow', draft],
+            #          stdout=subprocess.PIPE, 
+            #          stderr=subprocess.PIPE,
+            #          shell = True)
+            # stdout, stderr = process.communicate()
+            # print(stdout)
             os.system("bash runningWindow.sh "+draft)
             time.sleep(2)
             slid = pd.read_csv("ContigSliding.csv", sep="\t", header=None, skipfooter=1)
